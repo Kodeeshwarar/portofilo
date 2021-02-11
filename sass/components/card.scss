@@ -1,0 +1,157 @@
+.card-header {
+  width: 30vw;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2rem 6rem rgba(69, 67, 9, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.109);
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  @include respond(small-phone) {
+    width: 80vw !important;
+  }
+  @include respond(phone) {
+    margin-bottom: 10rem;
+    width: 55vw !important;
+  }
+  @include respond(tab-port) {
+    height: 44rem !important;
+  }
+
+  &__bg {
+    width: 100%;
+    height: 13rem;
+    background: #ff4c60 !important;
+    clip-path: circle(180px at center -73px);
+  }
+
+  &__profile {
+    width: 14rem;
+    height: 14rem;
+    margin: -11rem 0 0 0;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  &__name {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.5rem;
+    color: #454360;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  &__jop {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #454360;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+}
+
+.border-bottom {
+  width: 90%;
+  margin: 1rem 0;
+}
+
+.card-social {
+  @include flex;
+}
+.social__box {
+  font-size: 3rem;
+
+  &-icon {
+    color: #454360;
+    padding: 1rem;
+    border-radius: 50%;
+
+    &:hover {
+      background: var(--color-primary);
+      color: var(--color-grey-light-1);
+    }
+  }
+}
+
+.about-text {
+  width: 55vw;
+  background: #ffffff;
+  box-shadow: 0 5px 2rem rgba(69, 67, 9, 0.1);
+  border-radius: 20px;
+  padding: 4rem 3rem;
+  border: 4px solid rgba(69, 67, 9, 0.1);
+  @include respond(phone) {
+    width: 95vw;
+  }
+
+  h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 3.3rem;
+    color: #454360;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-family: "Rubik", sans-serif;
+    font-size: 2rem;
+    color: #454360;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 0 0 0 0.7rem;
+
+    span {
+      font-family: "Open Sans", sans-serif;
+      color: var(--color-primary-dark);
+
+      font-family: 2.2rem;
+      text-transform: uppercase;
+    }
+  }
+
+  p {
+    font-family: sans-serif;
+    color: #454360;
+    line-height: 1.9;
+    text-transform: capitalize;
+    padding: 1rem 0 0 0;
+
+    &::first-line {
+      text-indent: 4rem;
+      @include respond(small-phone) {
+        text-indent: 0;
+      }
+    }
+  }
+}
+
+.about-details-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0.5rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+
+  li {
+    list-style: none;
+    font-family: sans-serif;
+    position: relative;
+    padding: 1rem 2.5rem;
+
+    &::before {
+      content: "\2192";
+      position: absolute;
+      color: var(--color-primary-dark);
+      top: 0;
+      left: -2.6rem;
+      font-size: 2.9rem;
+    }
+  }
+}

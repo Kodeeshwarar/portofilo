@@ -1,0 +1,109 @@
+.skill-box {
+  padding: 2.5rem 3rem;
+  width: 80vw;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  @include respond(small-phone) {
+    width: 95vw !important;
+  }
+  .skill {
+    margin: 2rem 0;
+
+    &:first-child {
+      margin-top: 0px;
+    }
+
+    &-name {
+      margin-bottom: 5px;
+
+      span {
+        font-weight: 500;
+        font-size: 1.7rem;
+        opacity: 0;
+        color: var(--color-grey);
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .progress-line {
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 1rem;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+      0 1px rgba(255, 255, 255, 0.8);
+    animation: animate 10s cubic-bezier(1, 0, 0.5, 1) forwards;
+
+    span {
+      height: 100%;
+      position: absolute;
+      border-radius: 10px;
+      transform: scaleX(0);
+      transform-origin: left;
+      background: #6665ee;
+      animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    }
+  }
+}
+
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.skill .progress-line .html span {
+  width: 80%;
+}
+.skill .progress-line .css span {
+  width: 75%;
+}
+.skill .progress-line .bootstarp span {
+  width: 50%;
+}
+.skill .progress-line .scss span {
+  width: 90%;
+}
+.skill .progress-line .oracle span {
+  width: 60%;
+}
+
+.progress-line span::after {
+  position: absolute;
+  top: -2.8rem;
+  right: 0;
+  font-weight: 500;
+  background: blueviolet;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line.html span::after {
+  content: "80%";
+}
+.progress-line.css span::after {
+  content: "75%";
+}
+.progress-line.scss span::after {
+  content: "90%";
+}
+.progress-line.bootstarp span::after {
+  content: "50%";
+}
+.progress-line.oracle span::after {
+  content: "60%";
+}

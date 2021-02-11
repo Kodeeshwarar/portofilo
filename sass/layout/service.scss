@@ -1,0 +1,46 @@
+.service-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 260px;
+  grid-gap: 6rem;
+  justify-content: center;
+  text-align: center;
+  padding: 0 5rem;
+  @include respond(small-phone) {
+    grid-template-columns: 1fr;
+  }
+
+  [class^="service-"] {
+    padding: 2rem;
+    @include respond(small-phone) {
+      @media only screen and (max-width: 480px) {
+        margin: 1% 0 1% 0%;
+        width: 100%;
+      }
+    }
+  }
+
+  .service-1 {
+    background: #f97b8b;
+    background: #6c6ce5;
+  }
+  .service-2 {
+    background: #f97b8b;
+  }
+  .service-3 {
+    background: #f9d74c;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    color: #f2f2ff;
+    padding: 1rem;
+  }
+  p {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: lighter;
+  }
+}
