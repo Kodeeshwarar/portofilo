@@ -1,297 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favi icon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%2350e3c2%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2290%22>🚀</text></svg>" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,700;1,300;1,500;1,600&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
-    rel="stylesheet" />
-  <!--========== BOX ICONS ==========-->
-  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <title>portfilo</title>
-</head>
+    <link rel="stylesheet" href="css/style.css" />
 
-<body>
-  <nav class="navigation">
-    <span class="logo-text">coding_kliller</span>
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </div>
-    <ul class="navigation-list">
-      <li class="navigation-item">
-        <a href="#home" class="navigation-link">home</a>
-      </li>
-      <li class="navigation-item">
-        <a href="#about" class="navigation-link">about</a>
-      </li>
-      <li class="navigation-item">
-        <a href="#service" class="navigation-link">service</a>
-      </li>
-      <li class="navigation-item">
-        <a href="#mywork" class="navigation-link">my work</a>
-      </li>
-      <li class="navigation-item">
-        <a href="#contactus" class="navigation-link">contact us</a>
-      </li>
-    </ul>
-  </nav>
-  <header class="header" id="header">
-    <div class="container">
-      <div class="heading">
-        <figure class="hero-user-image">
-          <img src="img/user.svg" alt="user" width="150" height="150" />
-        </figure>
-        <div class="heading_text">
-          <h2 class="heading_text-1">i am</h2>
-          <h2 class="heading_text-2">kodeeshwarar</h2>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,700;1,300;1,500;1,600&display=swap"rel="stylesheet"/>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+    <!--========== BOX ICONS ==========-->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Portfilo</title>
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <span class="logo-text">coding_kliller</span>
+      <div class="menu-btn">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a href="#home" class="navigation-link">home</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#about" class="navigation-link">about</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#service" class="navigation-link">service</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#mywork" class="navigation-link">my work</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#contactus" class="navigation-link">contact us</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="heading">
+          <figure class="hero-user-image">
+            <img src="img/user.svg" alt="user" width="150" height="150" />
+          </figure>
+          <div class="heading_text">
+            <h2 class="heading_text-1">i am</h2>
+            <h2 class="heading_text-2">kodeeshwarar</h2>
+          </div>
+
+          <div class="typewrite__text">
+            <span class="typewrite__text-1">i'm</span>
+            <span
+              class="typewrite typewrite__text-2"
+              data-period="2000"
+              data-type='[ " Frontend Developer.", " Love Design.", "Love to Develop website." ]'
+            ></span>
+            <span class="wrap"></span>
+          </div>
         </div>
 
-        <div class="typewrite__text">
-          <span class="typewrite__text-1">i'm</span>
-          <span class="typewrite typewrite__text-2" data-period="2000"
-            data-type='[ " Frontend Developer.", " Love Design.", "Love to Develop website." ]'></span>
-          <span class="wrap"></span>
+        <div class="svg-image">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#FF0066"
+              d="M50,-40.6C63.2,-23.4,71.2,-2.6,66.2,13.5C61.3,29.7,43.4,41.4,25.8,47.5C8.2,53.6,-9.1,54.2,-26.1,48.2C-43,42.3,-59.7,29.9,-64.3,13.6C-68.9,-2.7,-61.4,-22.8,-48.6,-40C-35.9,-57.1,-18,-71.3,0.2,-71.5C18.4,-71.7,36.8,-57.9,50,-40.6Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+          <figure class="profile-picture">
+            <img src="img/kodi.jpg" alt="" class="profile-img" />
+          </figure>
         </div>
       </div>
-
-      <div class="svg-image">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#FF0066"
-            d="M50,-40.6C63.2,-23.4,71.2,-2.6,66.2,13.5C61.3,29.7,43.4,41.4,25.8,47.5C8.2,53.6,-9.1,54.2,-26.1,48.2C-43,42.3,-59.7,29.9,-64.3,13.6C-68.9,-2.7,-61.4,-22.8,-48.6,-40C-35.9,-57.1,-18,-71.3,0.2,-71.5C18.4,-71.7,36.8,-57.9,50,-40.6Z"
-            transform="translate(100 100)" />
-        </svg>
-        <figure class="profile-picture">
-          <img src="img/kodi.jpg" alt="" class="profile-img" />
-        </figure>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="section-about">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">about us</h2>
-      </div>
-      <div class="atom-spinner">
-        <div class="spinner-inner">
-          <div class="spinner-line"></div>
-          <div class="spinner-line"></div>
-          <div class="spinner-line"></div>
-          <!--Chrome renders little circles malformed :(-->
-          <div class="spinner-circle">&#9679;</div>
+    </header>
+    <main>
+      <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">about us</h2>
         </div>
-      </div>
+        <div class="atom-spinner">
+          <div class="spinner-inner">
+            <div class="spinner-line"></div>
+            <div class="spinner-line"></div>
+            <div class="spinner-line"></div>
+            <!--Chrome renders little circles malformed :(-->
+            <div class="spinner-circle">&#9679;</div>
+          </div>
+        </div>
 
-      <div class="row">
-        <div class="col-1-2">
-          <div class="card-header">
-            <div class="card-header__bg">&nbsp;</div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="card-header">
+              <div class="card-header__bg">&nbsp;</div>
 
-            <div class="card-header__profile">
-              <img src="img/kodi.jpg" alt=" " class="card-header__img" />
-            </div>
-
-            <p class="card-header__name">kodeeshwarar</p>
-            <p class="card-header__jop">website deveolper</p>
-            <p class="card-header__jop">ui/ux deveolper</p>
-
-            <div class="btn">
-              <a href="#" class="btn btn--dark btn--animated">cv resume</a>
-            </div>
-            <hr class="border-bottom" />
-            <div class="card-social">
-              <div class="social__box">
-                <span><i class="bx bxl-instagram-alt social__box-icon"></i></span>
+              <div class="card-header__profile">
+                <img src="img/kodi.jpg" alt=" " class="card-header__img" />
               </div>
 
-              <div class="social__box">
-                <span><i class="bx bxl-twitter social__box-icon"></i></span>
-              </div>
+              <p class="card-header__name">kodeeshwarar</p>
+              <p class="card-header__jop">website deveolper</p>
+              <p class="card-header__jop">ui/ux deveolper</p>
 
-              <div class="social__box">
-                <span><i class="bx bxl-github social__box-icon"></i></span>
+              <div class="btn">
+                <a href="#" class="btn btn--dark btn--animated">cv resume</a>
+              </div>
+              <hr class="border-bottom" />
+              <div class="card-social">
+                <div class="social__box">
+                  <span
+                    ><i class="bx bxl-instagram-alt social__box-icon"></i
+                  ></span>
+                </div>
+
+                <div class="social__box">
+                  <span><i class="bx bxl-twitter social__box-icon"></i></span>
+                </div>
+
+                <div class="social__box">
+                  <span><i class="bx bxl-github social__box-icon"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-0f-2">
+            <div class="about-text">
+              <h2>i am ui/ux developer</h2>
+              <h3>A <span>Frontend Developer</span> in curently</h3>
+              <p>
+                I design and develop service for customer of all sizes create
+                stylish, moden website. my passion is to create best website and
+                best user experience through the bold and meaniful interaction
+              </p>
+
+              <div class="about-details-content">
+                <ul class="about-details">
+                  <li>Age | 19 years</li>
+                  <li>Residence|</li>
+                  <li>Birthday | 12 dec 2001</li>
+                </ul>
+
+                <ul class="about-detail-1">
+                  <li>Phone | 8940883353</li>
+                  <li>Address | trichy , tamilnadu</li>
+                  <li>Email kodeesh2001@gmail.com</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-1-2">
-          <div class="about-text">
-            <h2>i am ui/ux developer</h2>
-            <h3>A <span>Frontend Developer</span> in curently</h3>
+      </section>
+
+      <section class="section-skill">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Skill</h2>
+        </div>
+        <div class="atom-spinner">
+          <div class="spinner-inner">
+            <div class="spinner-line"></div>
+            <div class="spinner-line"></div>
+            <div class="spinner-line"></div>
+            <!--Chrome renders little circles malformed :(-->
+            <div class="spinner-circle">&#9679;</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="skill-box">
+              <div class="skill">
+                <div class="skill-name">
+                  <span>HTML</span>
+                </div>
+                <div class="progress-line html">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">
+                  <span>css</span>
+                </div>
+                <div class="progress-line css">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">
+                  <span>scss</span>
+                </div>
+                <div class="progress-line scss">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">
+                  <span>bootstarp</span>
+                </div>
+                <div class="progress-line bootstarp">
+                  <span></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">
+                  <span>oracle</span>
+                </div>
+                <div class="progress-line oracle">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-service">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">service</h2>
+        </div>
+        <div class="atom-spinner">
+          <div class="spinner-inner">
+            <div class="spinner-line"></div>
+            <div class="spinner-line"></div>
+            <div class="spinner-line"></div>
+            <!--Chrome renders little circles malformed :(-->
+            <div class="spinner-circle">&#9679;</div>
+          </div>
+        </div>
+        <div class="service-box">
+          <div class="service-1">
+            <figure>
+              <img
+                src="img/pencil.svg"
+                alt="ui/ux design"
+                width="100"
+                height="100"
+              />
+            </figure>
+            <h2>ui/ux design</h2>
             <p>
-              I design and develop service for customer of all sizes create
-              stylish, moden website. my passion is to create best website and
-              best user experience through the bold and meaniful interaction
+              I create best ui/ux degins. user experience and user interfacceare
+              the key feature of my development
             </p>
+          </div>
+          <div class="service-2">
+            <figure>
+              <img
+                src="img/social-media.svg"
+                alt="ui/ux design"
+                width="100"
+                height="100"
+              />
+            </figure>
+            <h2>web development</h2>
+            <p>I create all feature and customer support</p>
+          </div>
+          <div class="service-3">
+            <figure>
+              <img
+                src="img/programming.svg"
+                alt="ui/ux design"
+                width="100"
+                height="100"
+              />
+            </figure>
 
-            <div class="about-details-content">
-              <ul class="about-details">
-                <li>Age | 19 years</li>
-                <li>Residence|</li>
-                <li>Birthday | 12 dec 2001</li>
-              </ul>
+            <h2>content writting</h2>
+            <p>I create the best content in bussiness content</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-education">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Education</h2>
+        </div>
+        <div class="atom-spinner">
+          <div class="spinner-inner">
+            <div class="spinner-line"></div>
+            <div class="spinner-line"></div>
+            <div class="spinner-line"></div>
+            <!--Chrome renders little circles malformed :(-->
+            <div class="spinner-circle">&#9679;</div>
+          </div>
+        </div>
+        <div class="timeline-edu">
+          <div class="timeline-container">
+            <figure>
+              <img
+                src="img/university-degree.svg"
+                alt="Degree icon"
+                width="70"
+                height="70"
+              />
+            </figure>
+            <div class="content">
+              <span>2021-present</span>
+              <div class="tittle">Bachelor's Degree</div>
+              <p>srimad andavar art and science college, Trichy</p>
+            </div>
+            <figure class="">
+              <img
+                src="img/university-degree.svg"
+                alt="Degree icon"
+                width="70"
+                height="70"
+              />
+            </figure>
+            <div class="content">
+              <span>2019</span>
+              <div class="tittle">higher-secondary</div>
+              <p>st.joseph higher secondary scholl, trichy</p>
+            </div>
+            <figure>
+              <img
+                src="img/university-degree.svg"
+                alt="Degree icon"
+                width="70"
+                height="70"
+              />
+            </figure>
+            <div class="content">
+              <span>2017</span>
+              <div class="tittle">senior-secondary</div>
+              <p>st.joseph higher secondary scholl somarasampettai, trichy</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="contact-form">
+          <div class="max-width">
+            <div class="contact-form_bg">
+              <form action="" class="form">
+                <div class="form-group">
+                  <input type="text" name="name" id="name" class="form-group_input" placeholder="Name" required autocomplete="off"/>
+                  <label for="name" class="form-group_label">name </label>
+                 
+                </div>
 
-              <ul class="about-detail-1">
-                <li>Phone | 8940883353</li>
-                <li>Address | trichy , tamilnadu</li>
-                <li>Email kodeesh2001@gmail.com</li>
-              </ul>
+                <div class="form-group">
+                  <input type="email" name="name" id="name" class="form-group_input" placeholder="email" required autocomplete="off"/>
+                  <label for="name" class="form-group_label">email </label>
+                 
+                </div>
+
+                <div class="form-group">
+                  <input type="tel" name="name" id="name" class="form-group_input" placeholder="phone number" required autocomplete="off"/>
+                  <label for="name" class="form-group_label">contact number</label>
+                 
+                </div>
+                <div class="form-group">
+                 <span class="text-area"> send message</span>
+                  <textarea name="" id="" cols="45" rows="5"  >Send a message...</textarea>
+                </div>
+                <div class="btn">
+                  <a href="http://" class="btn-rounded ">summit</a>
+                </div>
+               
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="section-skill">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">Skill</h2>
-      </div>
-      <div class="atom-spinner">
-        <div class="spinner-inner">
-          <div class="spinner-line"></div>
-          <div class="spinner-line"></div>
-          <div class="spinner-line"></div>
-          <!--Chrome renders little circles malformed :(-->
-          <div class="spinner-circle">&#9679;</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="skill-box">
-            <div class="skill">
-              <div class="skill-name">
-                <span>HTML</span>
-              </div>
-              <div class="progress-line html">
-                <span></span>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-name">
-                <span>css</span>
-              </div>
-              <div class="progress-line css">
-                <span></span>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-name">
-                <span>scss</span>
-              </div>
-              <div class="progress-line scss">
-                <span></span>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-name">
-                <span>bootstarp</span>
-              </div>
-              <div class="progress-line bootstarp">
-                <span></span>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-name">
-                <span>oracle</span>
-              </div>
-              <div class="progress-line oracle">
-                <span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-service">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">service</h2>
-      </div>
-      <div class="atom-spinner">
-        <div class="spinner-inner">
-          <div class="spinner-line"></div>
-          <div class="spinner-line"></div>
-          <div class="spinner-line"></div>
-          <!--Chrome renders little circles malformed :(-->
-          <div class="spinner-circle">&#9679;</div>
-        </div>
-      </div>
-      <div class="service-box">
-        <div class="service-1">
-          <figure>
-            <img src="img/pencil.svg" alt="ui/ux design" width="100" height="100" />
-          </figure>
-          <h2>ui/ux design</h2>
-          <p>
-            I create best ui/ux degins. user experience and user interfacceare
-            the key feature of my development
-          </p>
-        </div>
-        <div class="service-2">
-          <figure>
-            <img src="img/social-media.svg" alt="ui/ux design" width="100" height="100" />
-          </figure>
-          <h2>web development</h2>
-          <p>I create all feature and customer support</p>
-        </div>
-        <div class="service-3">
-          <figure>
-            <img src="img/programming.svg" alt="ui/ux design" width="100" height="100" />
-          </figure>
-
-          <h2>content writting</h2>
-          <p>I create the best content in bussiness content</p>
-        </div>
-      </div>
-    </section>
-    <section class="section-education">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">Education</h2>
-      </div>
-      <div class="atom-spinner">
-        <div class="spinner-inner">
-          <div class="spinner-line"></div>
-          <div class="spinner-line"></div>
-          <div class="spinner-line"></div>
-          <!--Chrome renders little circles malformed :(-->
-          <div class="spinner-circle">&#9679;</div>
-        </div>
-      </div>
-      <div class="timeline-edu">
-        <div class="timeline-container">
-          <figure>
-            <img src="img/university-degree.svg" alt="Degree icon" width="70" height="70" />
-          </figure>
-          <div class="content">
-            <span>2021-present</span>
-            <div class="tittle">Bachelor's Degree</div>
-            <p>srimad andavar art and science college, Trichy</p>
-          </div>
-          <figure class="">
-            <img src="img/university-degree.svg" alt="Degree icon" width="70" height="70" />
-          </figure>
-          <div class="content">
-            <span>2019</span>
-            <div class="tittle">higher-secondary</div>
-            <p>st.joseph higher secondary scholl, trichy</p>
-          </div>
-          <figure>
-            <img src="img/university-degree.svg" alt="Degree icon" width="70" height="70" />
-          </figure>
-          <div class="content">
-            <span>2017</span>
-            <div class="tittle">senior-secondary</div>
-            <p>st.joseph higher secondary scholl somarasampettai, trichy</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script src="javascript.js"></script>
-</body>
-
+    </div>
+  
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="javascript.js"></script>
+  </body>
 </html>

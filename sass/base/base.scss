@@ -12,9 +12,15 @@ body {
   letter-spacing: 1.7;
   background: #f9f9ff;
   box-sizing: border-box;
+
+  @include respond(tab-land) {
+     overflow-x:hidden;
+  }
+
 }
 
 html {
+  overflow-x: hidden;
   // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
   @include respond(small-phone) {

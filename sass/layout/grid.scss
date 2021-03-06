@@ -16,9 +16,9 @@
     flex-direction: row;
   }
 
-  .col {
+  [class^="col-"] {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     @include respond(small-phone) {
       width: 100vw;

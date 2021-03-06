@@ -21,8 +21,9 @@
         font-weight: 500;
         font-size: 1.7rem;
         opacity: 0;
-        color: var(--color-grey);
+        color: #303030;
         text-transform: uppercase;
+        animation: showText2 0.5s 1.5s linear forwards;
       }
     }
   }
@@ -37,7 +38,7 @@
     border-radius: 1rem;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
       0 1px rgba(255, 255, 255, 0.8);
-    animation: animate 10s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 
     span {
       height: 100%;
@@ -51,26 +52,25 @@
   }
 }
 
-
 @keyframes animate {
   100% {
     transform: scaleX(1);
   }
 }
 
-.skill .progress-line .html span {
+.skill .html span {
   width: 80%;
 }
-.skill .progress-line .css span {
+.skill .css span {
   width: 75%;
 }
-.skill .progress-line .bootstarp span {
+.skill .bootstarp span {
   width: 50%;
 }
-.skill .progress-line .scss span {
+.skill .scss span {
   width: 90%;
 }
-.skill .progress-line .oracle span {
+.skill .oracle span {
   width: 60%;
 }
 
