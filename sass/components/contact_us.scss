@@ -4,9 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-   @include respond(tab-port) {
+  @include respond(tab-port) {
     // width < 900?
-display:none;
+    display: none;
   }
 }
 
